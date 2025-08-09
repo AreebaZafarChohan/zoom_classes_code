@@ -1,0 +1,41 @@
+Chat Completions API → Stateless
+
+{
+  "model": "gpt-4",
+  "messages": [
+    { "role": "system", "content": "You are a helpful assistant" },
+    { "role": "user", "content": "Hello" },
+    { "role": "assistant", "content": "Hi! How can I help?" },
+    { "role": "user", "content": "What's 2+2?" }
+  ]
+}
+
+
+Responses API → Stateful
+
+{
+  "model": "gpt-4o",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        { "type": "text", "text": "Show me a picture of a cat" }
+      ]
+    }
+  ]
+}
+
+{
+  "id": "resp_abc123",
+  "output": [
+    {
+      "role": "assistant",
+      "content": [
+        { "type": "text", "text": "Here is a cute cat!" },
+        { "type": "image", "image_url": "https://..." }
+      ]
+    }
+  ]
+}
+
+
