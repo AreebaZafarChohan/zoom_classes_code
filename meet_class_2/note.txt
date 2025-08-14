@@ -1,0 +1,7 @@
+Ye ek structured object hota hai jo sirf system prompt nahi, balki pura conversation ka format define karta hai:
+System message
+User message(s)
+Tools ka description
+Context messages
+Response formatting
+LLM ko ek proper "multi-message" input milta hai, jo advanced APIs jaise OpenAI Responses API ke liye optimized hota hai.
